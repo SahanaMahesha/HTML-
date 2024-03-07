@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/sahan/Desktop/webtech/selector3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+         h1::before{
+            content: "Hi";
+            color: green;
+         }
+         h1::after{
+            content: "Sahana";
+            color: orangered;
+         }
+         *{
+            background-color: black;
+            text-align: center;
+         }
+         li{
+            color: white;
+            text-align:left ;
+            font-size: xx-large;
+         }
+         li::marker{
+            content:"📖";
+         }
+         li::selection{
+            background-color: pink;
+         }
+    </style>
+</head>
+<body>
+    <h1 style="color: white">     Good  morning      </h1>
+    <ul>
+        <li>Web-Technology</li>
+        <li>Java </li>
+        <li> Mysql</li>
+    </ul>
+    
+
+</body></html>
