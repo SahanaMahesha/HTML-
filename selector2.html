@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selector</title>
+    <style>
+        div section{
+            background-color: palegreen;
+        }
+        div>h1{
+            background-color: pink;
+        }
+        div+h2{
+            color: brown;
+        }
+        div~h2{
+            color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>para1</h1>
+        <h1>para2</h1>
+        <section>
+            <p>para3</p>
+        </section>
+        <p>para4</p>
+    </div>
+    <div>
+        <h2>heading1</h2>
+        <h2>headin2</h2>
+    </div>
+        <h2>heading3</h2>
+        <h2>heading4</h2>
+</body>
+</html>
